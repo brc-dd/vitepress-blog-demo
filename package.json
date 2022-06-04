@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "dev": "concurrently \"nodemon --watch blog -e md collect-data.mjs\" vitepress",
+    "build": "node collect-data.mjs && vitepress build",
+    "serve": "vitepress serve"
+  },
+  "devDependencies": {
+    "concurrently": "latest",
+    "gray-matter": "latest",
+    "nodemon": "latest",
+    "remove-markdown": "latest",
+    "vitepress": "latest",
+    "vue": "latest"
+  }
+}
