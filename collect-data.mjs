@@ -12,7 +12,7 @@ const data = await Promise.all(
     })
 
     const { data, excerpt, path } = file
-    const contents = removeMd(excerpt).split(/\r\n|\n|\r/)
+    const contents = removeMd(excerpt).trim().split(/\r\n|\n|\r/)
 
     return {
       ...data,
