@@ -18,11 +18,7 @@ const data = await Promise.all(
       ...data,
       title: contents[0].replace(/\s{2,}/g, '').trim(),
       path: path.replace(/\.md$/, '.html'),
-      excerpt: contents
-        .slice(1)
-        .join('')
-        .replace(/\s{2,}/g, '')
-        .trim()
+      excerpt: contents.slice(1).join('').replace(/\s{2,}/g, '').trim()
     }
   })
 )
